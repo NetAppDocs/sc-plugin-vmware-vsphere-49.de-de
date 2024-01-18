@@ -1,0 +1,112 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_minimum_vcenter_privileges_required.html 
+keywords:  
+summary: Bevor Sie mit der Implementierung des SnapCenter Plug-ins für VMware vSphere beginnen, sollten Sie sicherstellen, dass die erforderlichen Mindestberechtigungen für vCenter vorhanden sind. 
+---
+= Minimale vCenter-Berechtigungen erforderlich
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Bevor Sie mit der Implementierung des SnapCenter Plug-ins für VMware vSphere beginnen, sollten Sie sicherstellen, dass die erforderlichen Mindestberechtigungen für vCenter vorhanden sind.
+
+
+
+== Erforderliche Berechtigungen für vCenter Admin-Rolle
+
+Datastore.AllocateSpace
+Datastore.Durchsuchen
+Datastore.Löschen
+Datastore.Dateimanagement
+Datenspeicher.Verschieben
+Datastore.Umbenennen
+Erweiterung.Registrieren
+Erweiterung.Registrierung Aufheben
+Extension.Update
+Host.Config.AdvancedConfig
+Host.Config.Ressourcen
+Host.Config.Settings
+Host.Config.Storage
+Host.Local.CreateVM
+Host.Local.DeleteVM
+Host.Local.ReconfigVM
+Netzwerk.Zuweisen
+Resource.ApplyRecommendation
+Resource.AssignVMToPool
+Resource.ColdMigrate
+Resource.HotMigrate
+Resource.QueryVMotion
+System.Anonymous
+System.Lesen
+System.Ansicht
+Aufgabe.Erstellen
+Task.Update
+VirtualMachine.Config.AddExistingDisk
+VirtualMachine.Config.AddNewDisk
+VirtualMachine.Config.AdvancedConfig
+VirtualMachine.Config.ReloadFromPath
+VirtualMachine.Config.RemoveDisk
+VirtualMachine.Config.Resource
+VirtualMachine.GuestOperations.Ausführen
+VirtualMachine.GuestOperations.Ändern
+VirtualMachine.GuestOperations.Query
+VirtualMachine.Interact.PowerOff
+VirtualMachine.Interact.PowerOn
+VirtualMachine.Inventory.Create
+VirtualMachine.Inventory.CreateFromExisting
+VirtualMachine.Inventory.Delete
+VirtualMachine.Inventory.Move
+VirtualMachine.Inventory.Register
+VirtualMachine.Inventory.Registrierung aufheben
+VirtualMachine.State.CreateSnapshot
+VirtualMachine.State.RemoveSnapshot
+VirtualMachine.State.RevertToSnapshot
+
+
+
+== Erforderliche Berechtigungen für SnapCenter Plug-in für VMware vCenter
+
+|===
+
+
+| *Privilegien* | *Etikett* 
+
+
+| NetappSCV.Guest.RestoreDatei | Wiederherstellung Von Gastdateien 
+
+
+| NetappSCV.Recovery.MountUnMount | Montieren/Entfernen 
+
+
+| NetappSCV.Backup.DeleteBackupJob | Ressourcengruppe/Sicherung Löschen 
+
+
+| NetappSCV.Configure.ConfigureStorageSystems.Delete | Storage-Systeme Entfernen 
+
+
+| NetappSCV.View | Anzeigen 
+
+
+| NetappSCV.Recovery.RecoverVM | Wiederherstellung von VM 
+
+
+| NetappSCV.Configure.ConfigureStorageSystems.AddUpdate | Storage-Systeme Hinzufügen/Ändern 
+
+
+| NetappSCV.Backup.BackupJetzt | Jetzt Sichern 
+
+
+| NetappSCV.Guest.Configure | Gastkonfiguration 
+
+
+| NetappSCV.Configure.ConfigureSnapCenterServer | Konfigurieren Sie den SnapCenter-Server 
+
+
+| NetappSCV.Backup.BackupScheduled | Ressourcengruppe Erstellen 
+|===
