@@ -30,7 +30,7 @@ image:scpivs44_image14.png["VSphere-Client-Bildschirm"]
 . Wählen Sie auf der Registerkarte Konfigurieren ein Backup aus, und klicken Sie auf *Umbenennen*.
 . Geben Sie im Dialogfeld *Backup umbenennen* den neuen Namen ein und klicken Sie auf *OK*.
 +
-Verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datastore-, Policy-, Backup- oder Ressourcengruppen-Namen: & * € # @ ! \ / : * ? " < > - ; ' , . Ein Unterstrich (_) ist zulässig.
+Verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datenspeicher-, Richtlinien-, Sicherungs- oder Ressourcengruppennamen: & * $ # @ ! \ / : * ?  " < > - | ; ' und Leerzeichen. Ein Unterstrich (_) ist zulässig.
 
 
 
